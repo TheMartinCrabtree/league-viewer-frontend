@@ -15,12 +15,12 @@ const reducer=(state = initialState, action)=>{
     switch(action.type){
         case    types.QUERY_INPUT_UPDATE:
             return {
-                state,
+                ...state,
                 queryInput: action.payload
             };
         case    types.QUERY_INPUT_RESET:
             return{
-                state,
+                ...state,
                 queryInput: ""
             };
         

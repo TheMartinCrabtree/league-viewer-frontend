@@ -4,7 +4,7 @@ import React, { useReducer, createContext, useActions } from 'react'
 const StoreContext = createContext(initialState);
 
 const StoreProvider=({ children })=>{
-    const [state, dispatch] = useReducer(reducer, initialState);
+    let [state, dispatch] = useReducer(reducer, initialState);
     const actions = useActions(state, dispatch);
 
     
