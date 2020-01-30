@@ -7,8 +7,8 @@ const StoreProvider=({ children })=>{
     let [state, dispatch] = useReducer(reducer, initialState);
     const actions = useActions(state, dispatch);
 
-    console.log("value of actions", actions);
-    console.log("value of dispatch", dispatch);
+    // console.log("value of actions", actions);
+    // console.log("value of dispatch", dispatch);
 
     
 

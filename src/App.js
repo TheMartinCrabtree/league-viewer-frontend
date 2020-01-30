@@ -7,6 +7,8 @@ import ChampList from './components/ChampList';
 function App() {
   const {state, dispatch, actions } = useContext(StoreContext)
 
+  console.log("logging actions in App", actions)
+
   return (
     <div className="App">
       <header >
