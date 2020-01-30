@@ -10,6 +10,11 @@ const StoreProvider=({ children })=>{
     
 
     // Render updated state
+    // return(
+    //     <StoreContext.Provider value={{state, dispatch, actions}} >
+    //         { children }
+    //     </StoreContext.Provider>
+    // );
     return(
         <StoreContext.Provider value={{state, dispatch, actions}} >
             { children }
