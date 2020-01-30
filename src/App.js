@@ -16,6 +16,7 @@ function App() {
         <p>
           section in app
         </p>
+        <ChampList />
         
       </section>
     </div>
